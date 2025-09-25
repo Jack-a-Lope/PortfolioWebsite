@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mesh Deformation Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Mesh Deformation Experiment</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+						<article class="bigbox post">
+							<a class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+							<div class="container">
+								<header>
+									<h2>Mesh Deformation Project</h2>
+									<p>Built using Unity 3D, C#, and Blender</p>
+								</header>
+								<a href="https://github.com/Jack-a-Lope" target="_blank" class="image github"> <img src="images/GithubLogo.jpg" /> </a>
+							</div>
+
+							<p>
+								In this project, I wanted to dynamically update the model of a mesh to reflect outside stimuli that would happen on it
+								similar to soft surfaces in real life. To mimic this I made it so that clicking on the object would deform the surrounding
+								region of the model. This worked by taking the distance from the point of contact to each vertex and applying a force to move
+								away from the initial point with exponential decay. Then this would ripple out to neighboring points and repeat until it fell
+								lower than a customizeable value. At the same time, there is a restoring force that is meant to return the model to its original state by pulling vertices back
+								to their original local positions.
+							</p>
+							<p>
+								When put together, these forces can create many effects by customizing different values. If the restoring force is greater than
+								one, then the object will eventually return to its initial state, while values less than one will ultimately stop with some 
+								degree of deformation. Mass values can make the vertices less or more responsive to the input, changing how pronounced the effect
+								is and by manipulating the distance decay, varrying amounts of the objects are effected at once.
+							</p>
+							<section>
+								<header>
+									<h3>Takeaways</h3>
+								</header>
+								<p>
+									The result of this project is a script that can allow for different outside inputs to manipulate the actual meshes of 3D
+									objects in Unity. If you want to try it for yourself, the GitHub Repo for this can be found through the icon at the top
+									of the page. I included an option for the object to have constant, random inputs if you just want to see it for yourself
+									and I included both a sphere and a custom railing model (with poor topology) to act a demonstration pieces. Enjoy!
+								</p>
+							</section>
+							
+						</article>
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<div class="row">
+							<section style="display: flex; justify-content: space-evenly;">
+								<header>
+									<h2>Contact Information: </h2>
+								</header>
+								<ul class="social">
+									<li><a class="icon brands fa-github" href="https://github.com/Jack-a-Lope"><span class="label">LinkedIn</span></a></li>
+									<li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/jack-kellen"><span class="label">LinkedIn</span></a></li>
+								</ul>
+								<ul class="contact">
+									<li>
+										<h3>Mail</h3>
+										<p><a href="#">kellenjohn@ufl.edu</a></p>
+										<h3>Phone</h3>
+										<p>(386) 453-9286</p>
+									</li>
+
+								</ul>
+							</section>
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

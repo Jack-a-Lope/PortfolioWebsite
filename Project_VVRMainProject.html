@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Vascular VR Main Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Vascular VR Main Project</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+						<article class="bigbox post">
+							<a class="image featured"><img src="images/MainProjectOverview.PNG" alt="" /></a>
+							<div class="container">
+								<header>
+									<h2>Vascular VR Main Project</h2>
+									<p>Built using Unity 3D & C#</p>
+								</header>
+							</div>
+
+							<p>
+								I contributed to this project as a part of my work on the Vascular VR at the UF Surf Lab. The goal of this project is to
+								create a tool for medical professionals where they can take in stacks of medical scans (MRI or CT), select structures based
+								off of Isovalues and generate a voxel cloud that they can interact with in 3D space or VR. This cloud would act as a 3D
+								render of the scans through Lego-Stippling. Like the Rendering Style Study, I cannot share the code as it is not my property,
+								but I was given permission to share screenshots of the product to demonstrate my work.
+							</p>
+							<p>
+								My role is to work on the data selection tool and generally make it better. The data selection is the grey region with the actual
+								medical scans in the image above. Prior to joining, the selections only allowed for one selection box to be drawn which would inform
+								the selection region for all slices included, but this isn't ideal as it adds a lot of noise if the structure isn't in the same region
+								accross the majority of the stack. Ergo, I updated this to allow for keyframe selections to be made with the system interpolating 
+								between them.
+							</p>
+							<p>
+								Currently, I am working on improving it to allow for selections on multiple stacks to inform the voxel generation at the same time. 
+								By multiple stacks, I am referring to the coronal, axial and sagital scans of the organic subject that are taken from front-to-back,
+								top-to-bottom and left-to-right respectively and these can be seen in the image as the differnet medical scans on the right. By 
+								taking in information from all of the stacks at once, the resulting cloud will be more accurate as it won't be filling in the gaps 
+								between each scan without thinking and instead be informed by the other two which intersect it.
+							</p>
+							<section>
+								<header>
+									<h3>Takeaways</h3>
+								</header>
+								<p>
+									This project is extremely interesting and I am lucky to be a part of something where I can grow my skills and have an immediate
+									tangible impact. It is part of what has spurred me to try and learn more about VR and AR technologies, gave me the foundation of
+									Unity experience that I work from today and is frankly the coolest thing I am able to work on. 
+								</p>
+							</section>
+							
+						</article>
+
+					</div>
+				</section>
+			<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<div class="row">
+							<section style="display: flex; justify-content: space-evenly;">
+								<header>
+									<h2>Contact Information: </h2>
+								</header>
+								<ul class="social">
+									<li><a class="icon brands fa-github" href="https://github.com/Jack-a-Lope"><span class="label">LinkedIn</span></a></li>
+									<li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/jack-kellen"><span class="label">LinkedIn</span></a></li>
+								</ul>
+								<ul class="contact">
+									<li>
+										<h3>Mail</h3>
+										<p><a href="#">kellenjohn@ufl.edu</a></p>
+										<h3>Phone</h3>
+										<p>(386) 453-9286</p>
+									</li>
+
+								</ul>
+							</section>
+
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
